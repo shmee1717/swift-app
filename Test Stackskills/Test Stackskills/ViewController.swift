@@ -20,13 +20,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: Any) {
+        coolLabel.text = "Answer is: \(Int(text1.text!)! + Int(text2.text!)!)"
         
         print(text1.text!)
         print(text2.text!)
         
     }
    
-
+ 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
