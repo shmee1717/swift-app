@@ -21,34 +21,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-lY-boB">
-                                <rect key="frame" x="157" y="70" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmA-VX-TAo">
+                                <rect key="frame" x="112" y="28" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQQ-3y-nQi">
+                                <rect key="frame" x="139" y="137" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XhW-Wk-ICN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-tD-1nd">
+                                <rect key="frame" x="139" y="205" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YRj-Vu-jAL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-lY-boB">
+                                <rect key="frame" x="157" y="68" width="60" height="30"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Uv-FN-aSY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-sw-GdJ">
-                                <rect key="frame" x="140" y="135" width="94" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push Me Too!"/>
-                                <connections>
-                                    <action selector="buttonTappedAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2A-m7-u6E"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmA-VX-TAo">
-                                <rect key="frame" x="112" y="28" width="151" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kz7-tD-1nd" firstAttribute="top" secondItem="ZQQ-3y-nQi" secondAttribute="bottom" constant="38" id="D5q-Jh-92y"/>
+                            <constraint firstItem="EzI-lY-boB" firstAttribute="top" secondItem="jmA-VX-TAo" secondAttribute="bottom" constant="19" id="HQ4-em-Vka"/>
+                            <constraint firstItem="ZQQ-3y-nQi" firstAttribute="top" secondItem="EzI-lY-boB" secondAttribute="bottom" constant="37" id="Lom-5P-DvJ"/>
+                            <constraint firstItem="EzI-lY-boB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ye4-SD-Qyg"/>
+                            <constraint firstItem="ZQQ-3y-nQi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZf-I4-iFP"/>
+                            <constraint firstItem="jmA-VX-TAo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aIw-6V-d6C"/>
+                            <constraint firstItem="Kz7-tD-1nd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="caX-PD-7zB"/>
+                            <constraint firstItem="jmA-VX-TAo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="sZF-SR-pRZ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="jmA-VX-TAo" id="LEW-0M-ZxE"/>
+                        <outlet property="text1" destination="ZQQ-3y-nQi" id="gPg-DC-fzz"/>
+                        <outlet property="text2" destination="Kz7-tD-1nd" id="e4q-oV-bWC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
