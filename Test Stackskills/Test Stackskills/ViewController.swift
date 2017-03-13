@@ -16,18 +16,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text2: UITextField!
     
-    
-    
-    
     @IBAction func buttonTapped(_ sender: Any) {
-        coolLabel.text = "Answer is: \(Int(text1.text!)! + Int(text2.text!)!)"
         
-        print(text1.text!)
-        print(text2.text!)
+        let addition = true
+        
+        if addition {
+            coolLabel.text = "Answer is:\(Double(text1.text!)! + Double(text2.text!)!)"
+        }
         
     }
-   
- 
+    
+    
     
     
     override func viewDidLoad() {
@@ -36,12 +35,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
